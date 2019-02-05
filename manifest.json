@@ -1,0 +1,11 @@
+{
+  "short_name": "РБК Главное",
+  "name": "РБК Главное",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "ru.rbc.news.starter"
+    }
+  ]
+}
