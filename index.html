@@ -22,8 +22,12 @@
       
          var js = document.createElement('script');
             js.async = true;
-            js.src = "//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500";
+            js.src = "//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500&callback=callbackInstagramEmbeds';
             $('head').append(js);
+      
+      window['callbackInstagramEmbeds'] = function(data) {
+           console.log(data);
+        };
 
         $.ajax({
             url: '//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500',
