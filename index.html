@@ -19,9 +19,14 @@
             js.src = "//platform.instagram.com/en_US/embeds.js";
             $('head').append(js);
         }
+      
+         var js = document.createElement('script');
+            js.async = true;
+            js.src = "//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500";
+            $('head').append(js);
 
         $.ajax({
-            url: '//api.instagram.com/oembed/?url=' + 'https://www.instagram.com/p/Bt4O0xLngph/' + '&omitscript=true&maxwidth=500',
+            url: '//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500',
             dataType: 'json',
             xhrFields: {
                 withCredentials: true
