@@ -20,16 +20,11 @@
             $('head').append(js);
         }
       
-      window['callbackName'] = function(data) {console.log(data);}
+      /*window['callbackName'] = function(data) {console.log(data);}*/
 
         $.ajax({
-            url: '//api.instagram.com/oembed/?url=https://www.instagram.com/p/Bt4O0xLngph/&omitscript=true&maxwidth=500',
-            dataType: 'json',
-            jsonp: false,
-           jsonpCallback: 'callbackName',
-            xhrFields: {
-                withCredentials: true
-            }
+            url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
+            dataType: 'json'
         }).done(function(data) {
             $('#' + containerId).html(data.html);
             var renderEmbed = function() {
