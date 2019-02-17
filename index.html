@@ -21,7 +21,7 @@
         }
      
         $.ajax({
-            url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
+            url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/&callbackName=callFunc',
              data: {omitscript:true, maxwidth:500},
           dataType: "json"
         }).done(function(data) {
