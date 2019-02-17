@@ -21,7 +21,7 @@
         }
      
         $.ajax({
-            url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
+            url: 'https://www.instagr.am/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
              data: {omitscript:true, maxwidth:500}
         }).done(function(data) {
             $('#' + containerId).html(data.html);
