@@ -27,8 +27,8 @@
              data: {omitscript:true, maxwidth:500},
           contentType: "application/json; charset=utf-8",
           dataType: "jsonp",
-          cache: false,
-           jsonp: 'callbackName'
+           jsonp: false,
+           jsonpCallback: "callbackName"
         }).done(function(data) {
             $('#' + containerId).html(data.html);
             var renderEmbed = function() {
