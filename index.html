@@ -23,7 +23,7 @@
         $.ajax({
             url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
              data: {omitscript:true, maxwidth:500},
-          dataType: "jsonp"
+          dataType: "json"
         }).done(function(data) {
             $('#' + containerId).html(data.html);
             var renderEmbed = function() {
