@@ -26,8 +26,7 @@
             url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
              data: {omitscript:true, maxwidth:500},
           contentType: "application/json; charset=utf-8",
-           jsonp: "callbackName123",
-          dataType: "jsonp"
+          dataType: "json"
         }).done(function(data) {
             $('#' + containerId).html(data.html);
             var renderEmbed = function() {
