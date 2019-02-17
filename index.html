@@ -20,13 +20,13 @@
             $('head').append(js);
         }
       
-      window['callbackName'] = function(data) {console.log(data);}
+      window['callbackName123'] = function(data) {console.log(data);}
 
         $.ajax({
             url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/',
              data: {omitscript:true, maxwidth:500},
           contentType: "application/json; charset=utf-8",
-           jsonp: "callbackName",
+           jsonp: "callbackName123",
           dataType: "jsonp"
         }).done(function(data) {
             $('#' + containerId).html(data.html);
